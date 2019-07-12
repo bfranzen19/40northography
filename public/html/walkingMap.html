@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- copenhagen.css -->
+  <link rel="stylesheet" href="/css/copenhagen.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <h1 class="headers">maps of our exploration</h1>
+        <p class="detailText"> zoom in on any of the markers to see where we walked in that city. see each destination page for a more detailed map and description of our stay. </p>
+      </div>
+    </div>
+
+<!-- where are they -->
+    <!-- <div class="alert alert-warning" role="alert" id="whereAreThey">
+      where are they now? <a href="/london" class="alert-link">london, england</a>! head over to that page to see more information and some pictures.
+    </div><br/> -->
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <div id="walkingMap">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YNso04gO6uzxg8Sikg2k50SDZcXq4xA-" width="640" height="480"></iframe>
+        </div>
+      </div>
+    </div>
+
+<!-- travel stats -->
+  <div class="jumbotron">
+    <h1 class="jumbotronTitle display-3">miles walked</h1>
+    <hr class="my-4">
+    <p class="jumbotronP">total miles walked in oslo: 19.59</p>
+    <p class="jumbotronP">average miles walked per day in oslo: 9.8</p><br/>
+    <p class="jumbotronP">total miles walked in stockholm: 29.09</p>
+    <p class="jumbotronP">average miles walked per day in stockholm: 7.3</p><br/>
+    <p class="jumbotronP">total miles walked in copenhagen: 13.2</p>
+    <p class="jumbotronP">average miles walked per day in copenhagen: 8.3 </p><br/>
+    <p class="jumbotronP">total miles walked in munich: 2.03 </p><br/>
+    <p class="jumbotronP">total miles walked in innsbruck: 6.83 </p>
+    <p class="jumbotronP">average miles walked per day in innsbruck: 3.42 </p><br/>
+    <p class="jumbotronP">total miles walked in verona: 3.23 </p><br/>
+    <p class="jumbotronP">total miles walked in florence: 13.97 </p>
+    <p class="jumbotronP">average miles walked per day in florence: 10 </p><br/>
+    <p class="jumbotronP">total miles walked in the vatican: 17.6 </p><br/>
+    <p class="jumbotronP">total miles walked in rome: 18.2 </p>
+    <p class="jumbotronP">average miles walked per day in rome: 9.1 </p><br/>
+    <p class="jumbotronP">total miles walked in amsterdam: 16.3 </p>
+    <p class="jumbotronP">average miles walked per day in amsterdam: 8.2 </p><br/>
+    <p class="jumbotronP">total miles walked in brussels: 4.4 </p><br/>
+    <p class="jumbotronP">total miles walked in london: 21.8 </p>
+    <p class="jumbotronP">average miles walked per day in london: 7.3 </p><br/>
+    <br/><hr/><br/>
+    <p class="center jumbotronP">total miles walked in europe: 220.6 </p>
+
+    <br/><br/>
+    <div id="button">
+      <p class="jumbotronP lead"><a class="btn btn-primary btn-lg" href="/" role="button">home</a></div>
+    </div>
+  </div>
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

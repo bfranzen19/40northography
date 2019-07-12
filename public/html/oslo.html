@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- oslo.css -->
+  <link rel="stylesheet" href="/css/oslo.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+<!-- location name -->
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">oslo, norway</h1>
+        </div>
+      </div>
+    </div>
+
+<!-- dates / locations -->
+    <div>
+      <ul class="list-group">
+        <a href="#day1"><li class="itemText list-group-item list-group-item-info">day 1: 19 december --- colorado to new york city to london, england </li></a>
+        <a href="#day2"><li class="itemText list-group-item list-group-item-dark">day 2: 20 december --- london to oslo, norway </li></a>
+        <a href="#day3"><li class="itemText list-group-item list-group-item-info">day 3: 21 december --- oslo, norway </li></a>
+        <a href="#day4"><li class="itemText list-group-item list-group-item-dark">day 4: 22 december --- oslo to stockholm, sweden </li></a>
+      </ul>
+    </div>
+
+<!-- next up -->
+    <div><a href="/stockholm" id="nextUp"> next up - stockholm, sweden</a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QEsbjmFaL6awyAojRXZNj7GjCn4cpVGK" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion4 class="accordion listText"
+        day1="1"
+        date1="19 december"
+        location1="colorado to new york city to london, england "
+        description1="today's lesson: what happens when your airline goes on strike the day you're suppposed to leave? well, some weird things happened for us. instead of a nonstop flight to reykjavik this afternoon and a nonstop flight from reykjavik to oslo tomorrow morning, plans have changed a bit in a more miserable direction. in case you haven't heard, icelandair started their strike as of 11:51pm mountain time, USA last night. our flight was supposed to leave denver international airport at 4pm today. not great. icelandair switched our flights to 10:21am to laguardia in new york (landing at 4pm), and, 2.5 hours later from JFK, another flight to heathrow. this would only give us 2.5 hours to get from one new york airport to another during rush hour. i personally have never been to new york city but even i know that isn't realistic. thankfully, best buddy's parents came through for us and we were able to grab an earlier flight at 8am to give us more time to get over to JFK and allow us to make all our connections. so, now, our itinerary is: 8am flight from denver to laguardia. 6:30pm flight from JFK to heathrow. an hour or so layover in heathrow and then on to oslo (finally). it definitely impacts our plans to meet up with another of my closest friends in oslo and our airbnb but, other than that, i think everything is going as well as it can considering the past few hours. as of right now (i'm writing this on the first flight to new york), we should be landing in oslo at about 7:30am local time. yea, it's not ideal. yes, it's precisely the itinerary we were trying to avoid but shoutout to united, finnair / british airways for picking up the slack for icelandair and still managing to treat us well. as far as icelandair goes, i genuinely and sincerely hope the strike has the desired outcome and they are finally treated as they deserve to be treated. checkout the instagram page to see what few pictures i've been able to take thus far."
+
+        day2="2"
+        date2="20 december"
+        location2="london to oslo, norway"
+        description2="heathrow airport, london. if you're going through heathrow, even just a layover and you're heading to another location, you WILL go through customs and security. they're ambiguous about it, but it will happen. we learned it the hard way this morning and nearly missed our final connection to oslo. but, everything worked out and we're finally in oslo! this place looks like a perpetual christmas card everywhere you look. it's beautiful. so far, our explorations have only been from the train station to the airbnb but there will be more. unfortunately, our adventures will have to take place in the dark since the sun went down at 3pm-ish. we wandered all over (as seen by the blue route on the map) and saw the downtown area, mostly. it was very similar to pearl street back in boulder."
+
+        day3="3"
+        date3="21 december"
+        location3="oslo, norway"
+        description3="finally getting to explore oslo in the daylight. the sun didn't come up until about 9am and went down around 3pm but we made the most of the daylight. we walked back into the same area as last night, up to the royal palace, around the warf, and then the opera house. the coolest part about the opera house is that you can walk up on the roof. it's a really cool building and getting to see it at sunset was amazing. we had some awesome glogg and wandered through my first christmas market. i get why people are into it.
+
+        today's line color on the map is green. *** any extended, oddly straight lines are just where i forgot to restart the watch."
+
+        day4="4"
+        date4="22 december"
+        location4="oslo to stockholm, sweden"
+        description4="today we say goodbye to our first stop on this grand journey and head on to stockholm. norway was awesome and we will definitely be returning in the summer at some point. i imagine the weather that time of year is incredible. the weather wasn't that bad here, we were expecting a lot worse. it's definitely cold but the cold isn't stiffling or anything like that. i'm excited to see what the weather is like in stockholm."
+      ></accordion>
+    </span><br/><hr/>
+
+
+<!-- picture carousel -->
+    <h3 class='h3header'>select photographs</h3>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/oslo/1.jpg" alt="oslo 1">
+        </div>
+        <carousel-img url="/oslo/2.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/3.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/4.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/5.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/6.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/7.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/8.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/9.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/10.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/11.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/12.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/13.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/14.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/15.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/16.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/17.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/18.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/19.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/20.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/21.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/22.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/23.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/24.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/25.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/26.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/27.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/28.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/29.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/30.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/31.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/32.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/33.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/34.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/35.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/36.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/37.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/38.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/39.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/40.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/41.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/42.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/43.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/44.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/45.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/46.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/47.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/48.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/49.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/50.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/51.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/52.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/53.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/54.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/55.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/56.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/57.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/58.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/59.jpg" altDesc="oslo"></carousel-img>
+        <carousel-img url="/oslo/60.jpg" altDesc="oslo"></carousel-img>
+
+        <!-- <carousel-img url="/oslo/.jpg" altDesc="oslo"></carousel-img> -->
+
+      </div>  <!-- z carousel-inner -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+
+
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

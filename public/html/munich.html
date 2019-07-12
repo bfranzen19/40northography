@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- munich.css -->
+  <link rel="stylesheet" href="/css/munich.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">munich, germany</h1>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 10: 28 december --- arrive in munich, germany </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 10: 28 december --- munich to innsbruck, austria </li></a>
+
+      </ul>
+    </div>
+
+
+<!-- next up -->
+    <div><a href="/innsbruck" id="nextUp"> next up - innsbruck, austria</a></div>
+
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1KlKbPsSZcah8W3nwIVaMAMedF_ScGIev" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion2 id="day" class="accordion listText"
+        day1="10"
+        date1="28 december"
+        location1="arrive in munich, germany"
+        description1="we made it to munich! it's beautiful here. there's still all the christmas stuff set up all over and we got gluhwein, which is the german version of glogg. it was declicious but swedish glogg is still my favorite. we went to hans im gluck and had delicious burgers then explored munich in the snow. it's a truly beautiful place and i'm very happy we got to see it. we'll definitely be back!"
+
+        day2="10"
+        date2="28 december"
+        location2="munich to innsbruck, austria"
+        description2="munich was great but... fun fact, munich hbf doesn't announce track changes so you can easily get on a train to leipzig thinking it's your train to innsbruck. no one says anything, there aren't any signs on the platform, only at the end, so you get on the train in front of you, assuming it's the right one. don't assume. it's the wrong train. you're now going to leipzig. the kind deutsche bahn employee stopped the train for us at the next stop at the very edge of munich, gave us instructions to get on the next train back to munich and where to go, and told us we may be able to catch the next train to innsbruck. we ran, made the first train back to munich, but missed the train to innsbruck leaving us with a very cold 2 hour wait that then turned into a 2.5 hour wait thanks to our train being delayed coming from italy. finally, at around 8pm (our original train left at 5:30pm), we got on the correct train (verified by nearly every single person we passed) and made it to innsbruck around 10pm. thankfully our airbnb host was very helpful and came to meet us and let us into the apartment. it was rough."
+      ></accordion>
+    </span><br/><hr/>
+
+  <!-- picture carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/munich/1.jpg" alt="munich">
+        </div>
+
+        <carousel-img url="/munich/1.jpg" altDesc="munich"></carousel-img>
+        <carousel-img url="/munich/2.jpg" altDesc="munich"></carousel-img>
+        <carousel-img url="/munich/3.jpg" altDesc="munich"></carousel-img>
+        <carousel-img url="/munich/4.jpg" altDesc="munich"></carousel-img>
+        <carousel-img url="/munich/5.jpg" altDesc="munich"></carousel-img>
+        <carousel-img url="/munich/6.jpg" altDesc="munich"></carousel-img>
+        <carousel-img url="/munich/7.jpg" altDesc="munich"></carousel-img>
+        <carousel-img url="/munich/8.jpg" altDesc="munich"></carousel-img>
+        <carousel-img url="/munich/9.jpg" altDesc="munich"></carousel-img>
+
+      </div>  <!-- z carousel-inner -->
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> <!-- z picture carousel -->
+
+
+
+
+
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

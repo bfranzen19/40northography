@@ -1,7 +1,7 @@
 {
-  "name": "mapsearchtool",
+  "name": "40northography",
   "version": "1.0.0",
-  "description": "",
+  "description": "photography portfolio site",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,18 +9,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bfranzen19/MapSearchTool.git"
+    "url": "git+https://github.com/bfranzen19/40northography.git"
   },
-  "author": "bt",
+  "keywords": [
+    "photography",
+    "javascript",
+    "portfolio",
+    "express",
+    "vue",
+    "node"
+  ],
+  "author": "bt franzen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bfranzen19/MapSearchTool/issues"
+    "url": "https://github.com/bfranzen19/40northography/issues"
   },
-  "homepage": "https://github.com/bfranzen19/MapSearchTool#readme",
+  "homepage": "https://github.com/bfranzen19/40northography#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "imagemagick": "^0.1.3",
     "dotenv": "^8.0.0",
-    "express": "^4.17.1",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "nodemon": "^1.15.1"
   }
 }

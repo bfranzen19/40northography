@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- amsterdam.css -->
+  <link rel="stylesheet" href="/css/amsterdam.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">amsterdam, netherlands</h1>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 17: 4 january --- arrive in amsterdam, netherlands </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 18: 5 january --- amsterdam, netherlands  </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 19: 6 january --- amsterdam to brussels, belgium  </li></a>
+      </ul>
+    </div>
+
+
+<!-- next up -->
+    <div><a href="/brussels" id="nextUp"> next up - brussels, belgium</a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1t-pzxNlNCxTCOyGa1dXi6nd7HWcli8iC" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion3 id="day" class="accordion listText"
+        day1="17"
+        date1="4 january"
+        location1="arrive in amsterdam, netherlands"
+        description1="we made it to the 8th country of the trip and 10th country this year! so far amsterdam is really pretty and we're ready to explore it."
+
+        day2="18"
+        date2="5 january"
+        location2="amsterdam, netherlands"
+        description2="we walked all over the city today. we saw all the highlights and really enjoyed everything. amsterdam is pretty great!"
+
+        day3="19"
+        date3="6 january"
+        location3="amsterdam to brussels, belgium"
+        description3="so far so good. we're currently on the train from amsterdam to brussels and everything is running on time. we'll spend the day in brussles and then head on to london for the next few days!"
+      ></accordion>
+    </span><br/><hr/>
+
+    <!-- picture carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/amsterdam/1.jpg" alt="amsterdam">
+          </div>
+
+          <carousel-img url="/amsterdam/2.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/3.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/4.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/5.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/6.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/7.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/8.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/9.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/10.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/11.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/12.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/13.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/14.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/15.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/16.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/17.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/18.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/19.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/20.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/21.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/22.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/23.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/24.jpg" altDesc="amsterdam"></carousel-img>
+          <carousel-img url="/amsterdam/25.jpg" altDesc="amsterdam"></carousel-img>
+
+
+        </div> <!-- z carousel-inner -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div> <!-- z picture carousel -->
+
+
+
+
+
+
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

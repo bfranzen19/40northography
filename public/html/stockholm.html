@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- stockholm.css -->
+  <link rel="stylesheet" href="/css/stockholm.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+<!-- location name -->
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">stockholm, sweden</h1>
+        </div>
+      </div>
+    </div>
+
+<!-- dates / locations -->
+    <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 4: 22 december --- arrive in stockholm, sweden </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 5: 23 december --- stockholm, sweden </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 6: 24 december --- stockholm, sweden </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 7: 25 december --- stockholm, sweden (merry christmas) </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 8: 26 december --- stockholm to copenhagen, denmark </li></a>
+      </ul>
+    </div>
+
+<!-- next up -->
+    <div><a href="/copenhagen" id="nextUp"> next up - copenhagen, denmark </a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1258SJFRFEBeeYIXYb_N5sl6Ep5pI1_Xb"  width="640" height="480" id='map'></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion5 id="day" class="accordion listText"
+        day1="4"
+        date1="22 december"
+        location1="arrive in stockholm, sweden"
+        description1="we're here! it's wonderful to be back in stockholm. this place is gorgeous this time of year and i'm so very happy that we decided to return. we made it to strotorgets julmarknad on gamla stan and got some delicious swedish glogg. we also made it to the corner club, our favorite bar. best burger i've ever had in my life and, by far, the best drinks i've ever had. we're calling it an early night after a few days of travel but we're happy and excited to be back in our happy place."
+
+        day2="5"
+        date2="23 december"
+        location2="stockholm, sweden"
+        description2="camilla headed back to the US today. we tried to make the most of the day even though we were sad to see her go. for the next 20 days it's just me and best buddy, which is weird after traveling as 3 so far. we enjoyed rekorderlig (my favorite cider) at our favorite bar, o'connell's irish pub, went back to the christmas market and got some more glogg and some knack and other traditional candies for christmas morning. we got some cheese and crackers and other snacks in preparation for everything to be closed the next 2 days. going to a grocery store in another country is an interesting thing but it was a good experience. we got pizza at ristorante da peppe and had some of the best gluten free pizza i've ever had and some briska paroncider, which is also delicious. can't wait to see what christmas eve (julafton) is like here. "
+
+        day3="6"
+        date3="24 december"
+        location3="stockholm, sweden"
+        description3="julafton (christmas eve) in sweden. during the day, we wandered around sodermalm, found the top of stockholm at skinnarviksberget, walked around the northern coast of sodermalm and then headed back to the boat to watch donald duck with the rest of sweden. we enjoyed some knack, swedish chocolate, and norwegian vodka (vikingfjord) while we watched. the evening was filled with relaxing on the boat before scouring gamla stan for any open restaurants. i'll be adding stats to the homepage soon, stuff like miles walked per day, total miles walked, miles traveled, etc. because i'm a nerd like that."
+
+        day4="7"
+        date4="25 december"
+        location4="stockholm, sweden (merry christmas)"
+        description4="god jul fran sverige! it's barely 1am here but we wanted to make sure to tell everyone who cares merry christmas! we spent today walking around norrmalm and kungsholmen, including stadshuset. even though it rained most of today, the city was still beauitful! tomorrow we leave our beloved stockholm for a new place for us both - copenhagen, denmark! we'll be catching a train in the morning, which is also a first for us both. we're very excited to see southern sweden. christmas day here isn't really all that big of a deal. most stores, cafes, and restaurants were open and everyone was out walking around. it was really cool to see after the streets were empty on christmas eve. it was a really awesome experience and we're both sad to leave sweden but it's very exciting to see all new places from this point on!"
+
+        day5="8"
+        date5="26 december"
+        location5="stockholm to copenhagen, denmark"
+        description5="we're sad to leave sweden but it's exciting to see all new things. we're on the train now and, so far, it's very comfortable and much more pleasant than any flight i've ever been on. we're just barely south of stockholm and, despite the dreary weather, it's really beautiful. "
+      ></accordion>
+    </span><br/><hr/><br/>  <!-- z day details -->
+
+
+<!-- picture carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/stockholm/103.jpg" alt="stockholm">
+        </div>
+          <carousel-img url="/stockholm/101.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/102.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/100.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/104.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/105.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/106.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/107.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/108.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/109.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/110.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/111.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/112.jpg" altDesc="stockholm"></carousel-img>
+
+          <carousel-img url="/stockholm/48.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/49.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/50.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/51.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/52.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/53.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/54.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/55.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/56.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/57.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/58.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/59.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/60.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/61.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/62.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/63.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/64.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/65.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/66.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/67.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/68.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/69.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/70.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/71.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/72.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/73.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/74.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/75.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/76.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/77.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/78.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/79.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/80.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/81.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/82.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/83.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/84.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/85.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/86.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/87.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/88.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/89.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/90.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/91.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/92.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/93.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/94.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/95.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/96.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/97.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/98.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/99.jpg" altDesc="stockholm"></carousel-img>
+
+          <carousel-img url="/stockholm/15.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/16.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/17.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/18.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/19.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/20.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/21.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/22.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/23.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/24.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/25.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/26.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/27.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/28.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/29.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/30.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/31.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/32.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/33.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/34.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/35.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/36.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/37.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/38.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/39.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/40.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/41.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/42.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/43.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/44.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/45.jpg" altDesc="stockholm"></carousel-img>
+
+          <carousel-img url="/stockholm/1.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/2.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/3.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/4.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/5.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/6.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/7.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/8.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/9.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/10.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/11.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/12.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/13.jpg" altDesc="stockholm"></carousel-img>
+          <carousel-img url="/stockholm/14.jpg" altDesc="stockholm"></carousel-img>
+
+
+
+          <!-- <carousel-img url="/stockholm/.jpg" altDesc="stockholm"></carousel-img> -->
+
+        </div>  <!-- z carousel-inner -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> <!-- z picture carousel -->
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

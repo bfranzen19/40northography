@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- florence.css -->
+  <link rel="stylesheet" href="/css/florence.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">florence, italy</h1>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 12: 30 december --- arrive in florence, italy </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 13: 31 december --- florence, italy </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 14: 1 january --- florence to rome, italy (happy new year) </li></a>
+      </ul>
+    </div>
+
+
+<!-- next up -->
+    <div><a href="/rome" id="nextUp"> next up - rome, italy</a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1rT4QleQwlc7Jhe0-I5K_ibQUbEA0Bt8d" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion3 id="day" class="accordion listText"
+        day1="12"
+        date1="30 december"
+        location1="arrive in florence, italy"
+        description1="firenze. finally. it was treacherous getting here but we're happy to finally have arrived. i haven't had solid wifi in a few days so i'm very behind on updating the site but i'm trying to get a little done each day. first 5 minutes in florence i saw a cute dog and wasn't paying attention to where i was going and rolled the holy hell out of my ankle. thankfully best buddy is always ready for ankle injuries and she had a solid brace on hand. it won't slow me down (although it probably should) but there will be exponentially more prosecco consumed because of it. we got to see the ponte vecchio, duomo, and walk through the entire east side of the city last night between getting to our excellent airbnb and getting some delicious gluten free pizza, awesome prosecco, and A CALZONE! i haven't had a calzone in years, no one in the states attempts to make gluten free calzones for some reason. delicious food, wonderful prosecco, a hot shower, and comfortable bed will erase all the stress of getting here. i love italy already."
+
+        day2="13"
+        date2="31 december"
+        location2="florence, italy"
+        description2="new years eve in firenze! we started the day by walking up to piazzale michelangelo after getting caffe corretto and a cappuccino at bar ponte vecchio on the south side of the ponte vecchio. it was wonderful. then we wandered through the city and found it to be a little too packed for our comfort level on a holiday so we took side streets and picked up some more pizza, prosecco, and gelato after lunch at quiona. we're relaxing in the airbnb before going out to find a good place to watch the fireworks for new years."
+
+        day3="14"
+        date3="1 january"
+        location3="florence to rome, italy (happy new year)"
+        description3="happy new year from the ponte santa trinita in firenze, italy! there were fireworks all around us on the bridge up and down the arno and people lighting paper lanterns while we drank prosecco and enjoyed it all. later today we head down to rome!"
+      ></accordion>
+    </span><br/><hr/>
+
+    <!-- picture carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/florence/1.jpg" alt="copenhagen">
+          </div>
+
+          <carousel-img url="/florence/2.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/3.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/4.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/5.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/6.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/7.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/8.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/9.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/10.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/11.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/12.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/13.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/14.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/15.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/16.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/17.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/18.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/19.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/20.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/21.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/22.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/23.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/24.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/25.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/26.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/27.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/28.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/29.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/30.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/31.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/32.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/33.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/34.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/35.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/36.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/37.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/38.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/39.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/40.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/41.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/42.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/43.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/44.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/45.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/46.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/47.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/48.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/49.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/50.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/51.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/52.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/53.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/54.jpg" altDesc="florence"></carousel-img>
+          <carousel-img url="/florence/55.jpg" altDesc="florence"></carousel-img>
+
+          <!-- <carousel-img url="/florence/.jpg" altDesc="florence"></carousel-img> -->
+
+
+        </div> <!-- z carousel-inner -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>  <!-- z picture carousel -->
+
+
+
+
+
+
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

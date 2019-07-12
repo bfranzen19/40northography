@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- innsbruck.css -->
+  <link rel="stylesheet" href="/css/innsbruck.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">innsbruck, austria</h1>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 10: 28 december --- arrive in innsbruck, austria </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 11: 29 december --- innsbruck, austria </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 12: 30 december --- innsbruck to verona, italy </li></a>
+      </ul>
+    </div>
+
+<!-- next up -->
+    <div><a href="/verona" id="nextUp"> next up - verona, italy </a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=19_8Sr7stoOpVg42Xu4dz4Q3tbvksu7Dl" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion3 id="day" class="accordion listText"
+        day1="10"
+        date1="28 december"
+        location1="arrive in innsbruck, austria"
+        description1="arrival didn't go as planned but we made it here. finally. also, if you wear a gps watch in 3 countries in one day, starting it in each one, it will get very confused and make some weird maps."
+
+        day2="11"
+        date2="29 december"
+        location2="innsbruck, austria"
+        description2="today we wandered around innsbruck, had amazing burgers at ludwig, and took the nordkette cable car up to seegrube. seegrube sits at 6,250ft so it was a lot like being home. it's beautiful up there and i highly recommend it if you're ever in innsbruck! i'll post pictures as soon as i finish editing them."
+
+        day3="12"
+        date3="30 december"
+        location3="innsbruck to verona, italy"
+        description3="well, that was a cluster. we heard 2 different stories - an accident and snow, not sure which it was but our train out of innsbruck changed to a bus. at first, it was supposed to be a bus straight to verona, italy instead of a train. that bus filled up almost instantly after 2 hours of waiting in the freezing cold. people pushed right past us even though we were one of the first 5 people out there (along with our austrian saviour). the man in the scarf who spoke no english updated our austrian saviour that another bus would be there to take us to brenner/brennero, the town on the austrian/italian border and we would get on a train from there to verona. from what we could see and from what little we could understand, there were at least 2 other trains on the train out of brenner/brennero. we were standing in the hallway for a bit of the ride but our austrian saviour helped us once again and found us seats in the room next to hers. we finally got to verona 3 hours late and without any time to explore but that's ok. we walked to the porta nuova from the train station and then quickly walked back and caught our train to firenze. to our austrian friend and saviour - i hope you find this some day and i sincerely hope that you know how much you helped us. we're forever grateful to you and i hope you get everything you want in this life. thank you!"
+      ></accordion>
+    </span><br/><hr/>
+
+    <!-- picture carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/innsbruck/57.jpg" alt="innsbruck">
+          </div>
+
+          <carousel-img url="/innsbruck/1.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/2.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/3.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/4.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/5.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/6.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/7.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/8.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/9.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/10.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/11.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/12.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/13.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/14.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/15.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/16.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/17.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/18.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/19.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/20.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/21.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/22.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/23.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/24.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/25.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/26.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/27.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/28.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/29.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/30.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/31.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/32.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/33.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/34.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/35.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/36.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/37.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/38.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/39.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/40.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/41.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/42.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/43.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/44.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/45.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/46.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/47.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/48.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/49.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/50.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/51.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/52.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/53.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/54.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/55.jpg" altDesc="innsbruck"></carousel-img>
+          <carousel-img url="/innsbruck/56.jpg" altDesc="innsbruck"></carousel-img>
+
+
+        </div> <!-- z carousel-inner -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div> <!-- z picture carousel -->
+
+
+
+
+
+
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

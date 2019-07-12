@@ -1,0 +1,24 @@
+#flag {
+  background-image: url('/img/flagSweden.png');
+  border-radius: 10%;
+}
+
+#flag h1 {
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#main-nav {
+  font-family: 'Kranky', cursive;
+  text-shadow: 0.5px 0.5px 0.5px blue, 1px 1px 1px red;
+}
+
+li.list-group-item {
+  padding: 0.5rem;
+  color: black;
+  margin: 0 1rem;
+}

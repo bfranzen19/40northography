@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- reykjavik.css -->
+    <link rel="stylesheet" href="/css/reykjavik.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">reykjavik, iceland</h1>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 22: 9 january --- arrive in reykjavik, iceland </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 23: 10 january --- reykjavik, iceland </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 24: 11 january --- reykjavik back to colorado </li></a>
+      </ul>
+    </div>
+
+
+<!-- next up -->
+    <div><a href="/oslo" id="nextUp"> back to the beginning </a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1h2-8IMh4Qrx1q4XxccZFR7ilDQ2dC0Be" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion3 id="day" class="accordion listText"
+        day1="22"
+        date1="9 january"
+        location1="arrive in reykjavik, iceland"
+        description1="we made it safely! heathrow was a nightmare but, from what we've seen so far, that's completely normal. luckily, our flight was almost completely empty so it was very pleasant."
+
+        day2="23"
+        date2="10 january"
+        location2="reykjavik, iceland"
+        description2="we had probably the only clear day iceland has seen in months. it was gorgeous. we drove around and went up to gardur lighthouse and got some excellent pictures. the rest of our day was spent in the hot tub."
+
+        day3="24"
+        date3="11 january"
+        location3="reykjavik back to colorado"
+        description3="delays on delays on delays. so far, our flight has been delayed by 5 hours. still waiting to see if we're getting off of the island today."
+      ></accordion>
+    </span><br/><hr/>
+
+    <!-- picture carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/reykjavik/1.jpg" alt="reykjavik, iceland">
+          </div>
+
+          <carousel-img url="/reykjavik/2.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/3.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/4.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/5.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/6.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/7.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/8.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/9.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/10.jpg" altDesc="reykjavik, iceland"></carousel-img>
+
+          <carousel-img url="/reykjavik/11.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/12.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/13.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/14.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/15.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/16.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/17.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/18.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/19.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/20.jpg" altDesc="reykjavik, iceland"></carousel-img>
+
+          <carousel-img url="/reykjavik/21.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/22.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/23.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/24.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/25.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/26.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/27.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/28.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/29.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/30.jpg" altDesc="reykjavik, iceland"></carousel-img>
+
+          <carousel-img url="/reykjavik/31.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/32.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/33.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/34.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/35.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/36.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/37.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/38.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/39.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/40.jpg" altDesc="reykjavik, iceland"></carousel-img>
+
+          <carousel-img url="/reykjavik/41.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/42.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/43.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/44.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/45.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/46.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/47.jpg" altDesc="reykjavik, iceland"></carousel-img>
+          <carousel-img url="/reykjavik/48.jpg" altDesc="reykjavik, iceland"></carousel-img>
+
+        </div>  <!-- z carousel-inner -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>  <!-- z picture carousel -->
+
+
+
+
+
+
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- copenhagen.css -->
+  <link rel="stylesheet" href="/css/copenhagen.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">copenhagen, denmark</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 8: 26 december --- arrive in copenhagen, denmark </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 9: 27 december --- copenhagen, denmark </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 10: 28 december --- copenhagen to munich germany </li></a>
+      </ul>
+    </div> -->
+
+<!-- next up -->
+    <div><a href="/munich" id="nextUp"> next up - munich, germany</a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VV0RXWXMpKrnkSelK859fJRDG6_vWP71" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion3 id="day" class="accordion listText"
+        day1="8"
+        date1="26 december"
+        location1="arrive in copenhagen, denmark"
+        description1="country # 5 this year and the 5th country i've visited with my best buddy. speaking of best buddy, it's her birthday tomorrow! i'm excited to celebrate in copenhagen and get to explore the city with her. the train ride down here was pretty nice even though it was a little long. a lot more comfortable than flying (and cheaper) but we did end up spending the entire day on the train and didn't get to walk as far as we normally have been. we have a big day planned tomorrow with lots of birthday celebrations though so it's ok that today was a little lighter on the wandering around. we saw an awesome but very random fireworks show tonight which was cool but odd. the pictures came out alright. can't wait to see copenhagen in the daylight tomorrow and get on some bikes!"
+
+        day2="9"
+        date2="27 december"
+        location2="copenhagen, denmark"
+        description2="HAPPY BIRTHDAY, AMY! THANKS FOR BEING MY BEST FRIEND AND TRAVEL BUDDY!!! explore copenhagen - check. we biked a few miles and walked over 11 for a grand total of a little over 13 miles today. copenhagen was fun but it's definitely not in the running for more permanent residence.  we're both exhausted. on to munich early in the morning!"
+
+        day3="20"
+        date3="28 december"
+        location3="copenhagen to munich germany"
+        description3="we somehow made it to cph airport. it was quite the adventure. central station in copenhagen does not like english and thrives on chaos. the airport isn't much better... on to munich and innsbruck! 2 countries in one day."
+      ></accordion>
+    </span><br/><hr/>
+
+    <!-- picture carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/copenhagen/21.jpg" alt="copenhagen">
+        </div>
+        <carousel-img url="/copenhagen/22.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/23.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/24.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/25.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/26.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/27.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/28.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/29.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/30.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/31.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/32.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/33.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/34.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/35.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/36.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/37.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/38.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/39.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/40.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/41.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/42.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/43.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/44.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/45.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/46.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/47.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/48.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/49.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/50.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/51.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/52.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/53.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/54.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/55.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/56.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/57.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/58.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/58.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/59.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/60.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/61.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/62.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/63.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/64.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/65.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/66.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/67.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/68.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/69.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/70.jpg" altDesc="copenhagen"></carousel-img>
+
+        <carousel-img url="/copenhagen/1.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/2.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/3.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/4.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/5.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/6.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/7.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/8.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/9.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/10.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/11.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/12.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/13.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/14.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/15.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/16.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/17.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/18.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/19.jpg" altDesc="copenhagen"></carousel-img>
+        <carousel-img url="/copenhagen/20.jpg" altDesc="copenhagen"></carousel-img>
+
+        <!-- <carousel-img url="/copenhagen/.jpg" altDesc="copenhagen"></carousel-img> -->
+
+      </div>  <!-- z carousel-inner -->
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>  <!-- z picture carousel -->
+
+
+
+
+  </div> <!-- z #app -->
+
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

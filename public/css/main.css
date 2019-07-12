@@ -1,46 +1,264 @@
-.container {
+/* font-family: 'Covered By Your Grace', cursive; */
+  /* font-family: 'Just Another Hand', cursive; */
+  /* font-family: 'Homemade Apple', cursive; */
+  /* font-family: 'Kranky', cursive; */
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Rock Salt', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  /* font-family: 'Miltonian', cursive; */
+  /* font-family: 'Sigmar One', cursive; */
+  /* font-family: 'Ruslan Display', cursive; */
+  /* font-family: 'Love Ya Like A Sister', cursive; */
+  /* font-family: 'Yellowtail', cursive; */
+  /* font-family: 'Knewave', cursive; */
+  /* font-family: 'Fredericka the Great', cursive; */ /* maybe */
+  /* font-family: 'Trade Winds', cursive; */
+  /* font-family: 'Sirin Stencil', cursive; */
+
+.bestBuddyMapDiv{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    flex-direction: column;
-}
-
-.formData {
-    font-size: 22px;
-    border-radius: .25em;
-    text-align: center;
-    box-shadow: .5px .5px 1px gray, -.5px -.5px 1px lightgray;
-}
-
-#placeInput {
-    width: 70%;
-    margin-right: 1%;
-}
-
-#toDo {
-    width: 22%;
-    text-align: center;
-    margin-right: 1%;
-}
-
-#form {
-    display: flex;
     justify-content: center;
-    margin-top: 3%;
-    margin-bottom: 1.5%;
+    /* flex-direction: column; */
 }
 
-#map {
+.bestBuddyMap {
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 2%;
-    width: 100%;
+    margin-bottom: 10%;
+    width: 90%;
     height: 40em;
     border: 1px solid white;
     box-shadow: 2px 2px 4px gray, -2px -2px 4px lightgray;
     border-radius: .5em;
 }
 
-.big-head {
-    font-weight: bold;
+.homepageHeader {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 1px 1px 1px white, 2px 2px 1px black;
+  font-family: 'Trade Winds', cursive;
+}
+
+#main-nav {
+  font-family: 'Kranky', cursive;
+  text-shadow: 0.5px 0.5px 0.5px blue, 1px 1px 1px red;
+}
+
+.headers {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.h3size {
+  /* font-family: 'Sirin Stencil', cursive; */
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: 0.5px 0.5px 0.5px gray, 1px 1px 1px black;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pText {
+  font-family: 'Sirin Stencil', cursive;
+  text-shadow: 0.5px 0.5px 0.5px gray, 1px 1px 1px black;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+}
+
+.h3header{
+  /* font-family: 'Sirin Stencil', cursive; */
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: 0.5px 0.5px 0.5px gray, 1px 1px 1px black;
+  text-align: center;
+}
+
+.listText {
+  font-family: 'Sirin Stencil', cursive;
+  text-shadow: 0.5px 0.5px 0.5px gray, 1px 1px 1px black;
+  margin-bottom: 1rem;
+}
+
+.itemText {
+  color: black;
+  text-shadow: 1px 1px 1px gray;
+  font-family: 'Trade Winds', cursive;
+}
+
+.text {
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px gray;
+  margin: 0.5rem 2rem auto 2rem;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.detailText {
+  font-family: 'Cabin Sketch', cursive;
+  text-shadow: 0px 0px 0px white;
+  font-size: 1.25rem;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.margins {
+  margin: 2rem 3rem 3rem 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+#map {
+  margin: 1rem auto;
+  border: 1px solid black;
+}
+
+#item {
+  padding: 0.25rem;
+  width: 100%;
+  color: black;
+  text-indent: 3rem;
+}
+
+#itemGray {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-indent: 3rem;
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.gray {
+  font-style: italic;
+  padding: 0.25rem;
+  width: 100%;
+  text-indent: 3rem;
+
+}
+
+#nextUp {
+  margin: 0.5rem auto 0.5rem 2rem;
+  /* font-style: italic; */
+  text-shadow: 1px 1px 1px grey;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.hp-nav-item {
+  margin: auto;
+  font-family: 'Trade Winds', cursive;
+}
+
+.nav-item {
+  margin: auto 1rem auto 1rem;
+}
+
+ul#socialMedia li{
+  display: inline;
+  padding: 1.5rem;
+  margin-left: 0;
+}
+
+#carouselExampleControls {
+  width: 90%;
+  margin: 1rem auto 5rem auto;
+}
+
+#whereAreThey {
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: 0.5px 0.5px 0.5px gray;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#pictures {
+  width: 90%;
+  margin: auto;
+}
+
+.jumbotronTitle {
+  font-family: 'Covered By Your Grace', cursive;
+  text-shadow: 1px 1px 1px white, 2px 2px 2px black;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.jumbotronLead {
+  font-family: 'Yellowtail', cursive;
+  font-size: 1rem;
+  /* margin-left: 10%; */
+  text-align: center;
+}
+
+.jumbotronP {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px white, 1px 1px 1px black;
+  /* font-family: 'Sigmar One', cursive; */
+  margin: auto;
+}
+
+#button {
+  margin-left: 45%;
+}
+
+#walkingMap {
+  margin: auto;
+}
+
+.sideMargins {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.gearMargins {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.otherSiteMargins {
+  text-align: left;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.gear {
+  list-style: none;
+  font-size: 1.75rem;
+  margin: auto 3rem 1rem 3rem;
+
+  /* font-family: 'Yellowtail', cursive; */
+
+  /* font-family: 'Fredericka the Great', cursive; */ /* maybe */
+  font-family: 'Sirin Stencil', cursive;
+}
+
+.centerButtons {
+  margin: auto;
+  display: inline;
+  text-align: center;
+
+}
+
+.homepageButton {
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.leftAlign {
+  text-align: left;
+  display: inline;
+}
+
+.centerAlign {
+  text-align: center;
+  display: inline;
 }

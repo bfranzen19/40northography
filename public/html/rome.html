@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- rome.css -->
+  <link rel="stylesheet" href="/css/rome.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">rome, italy</h1>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 14: 1 january --- arrive in rome, italy </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 15: 2 january ---<a href="/vatican"> the vatican, italy </a></li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 16: 3 january --- rome, italy  </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 17: 4 january --- rome to amsterdam, netherlands  </li></a>
+      </ul>
+    </div>
+
+<!-- next up -->
+    <div><a href="/vatican" id="nextUp"> vatican city, italy (2 january)</a></div>
+    <div><a href="/amsterdam" id="nextUp"> next up - amsterdam, netherlands</a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1jCkIFTRHKlDr9ywRjqoi2kChmKG3F4Bq" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion4 id="day" class="accordion listText"
+        day1="14"
+        date1="1 january"
+        location1="arrive in rome, italy"
+        description1="we made it to rome! and without any train troubles this time. our trains in italy have been punctual and pleasant trips, way better than german or austrian trains we've been on. tonight, we made wishes in the trevi fountain and wandered around the area near our airbnb. so far, rome is beautiful. tomorrow, we head to the vatican and the day after we'll be in the colosseum, down in the arena, the roman forum, and palatine hill."
+
+        day2="15"
+        date2="2 january"
+        location2="the vatican, italy"
+        description2="head over to the vatican page to see pictures and details about today. we used the roman guy tours and they were excellent!"
+
+        day3="16"
+        date3="3 january"
+        location3="rome, italy"
+        description3="today, we got to walk on the arena floor of the colosseum, wander all over the colosseum, and then explore the palatine hill and roman forum. we've really lucked out with having incredible tour guides. today we used walk of italy and it was absolutely great!"
+
+        day4="17"
+        date4="4 january"
+        location4="rome to amsterdam, netherlands"
+        description4="although we had a tough time finding a way to the airport (no one would accept our ride at 0630), we finally made it and everything went well."
+      ></accordion>
+    </span><br/><hr/>
+
+
+    <!-- picture carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/rome/19.jpg" alt="rome">
+          </div>
+
+          <carousel-img url="/rome/20.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/21.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/22.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/23.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/24.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/25.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/26.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/27.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/28.jpg"
+          altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/29.jpg"
+          altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/30.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/31.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/32.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/33.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/34.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/35.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/36.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/37.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/38.jpg"
+          altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/39.jpg"
+          altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/40.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/41.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/42.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/43.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/44.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/45.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/46.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/47.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/48.jpg"
+          altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/49.jpg"
+          altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/50.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/51.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/52.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/53.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/54.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/55.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/56.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/57.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/58.jpg"
+          altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/59.jpg"
+          altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/60.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/61.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/62.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/63.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/64.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/65.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/66.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/67.jpg" altDesc="rome"></carousel-img>
+
+          <carousel-img url="/rome/2.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/3.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/4.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/5.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/6.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/7.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/8.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/9.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/10.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/11.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/12.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/13.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/14.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/15.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/16.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/17.jpg" altDesc="rome"></carousel-img>
+          <carousel-img url="/rome/18.jpg" altDesc="rome"></carousel-img>
+
+          <!-- <carousel-img url="/rome/.jpg" altDesc="rome"></carousel-img> -->
+
+        </div>  <!-- z carousel-inner -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>  <!-- z picture carousel -->
+
+
+
+
+
+
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

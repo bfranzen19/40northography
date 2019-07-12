@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40northography</title>
+<!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- jQ -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- main.css -->
+  <link rel="stylesheet" href="/css/main.css" />
+<!-- london.css -->
+  <link rel="stylesheet" href="/css/london.css" />
+<!-- bootstrap4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Covered+By+Your+Grace|Fredericka+the+Great|Homemade+Apple|Just+Another+Hand|Knewave|Kranky|Love+Ya+Like+A+Sister|Miltonian|Permanent+Marker|Rock+Salt|Ruslan+Display|Sigmar+One|Sirin+Stencil|Trade+Winds|Yellowtail" rel="stylesheet">
+<!-- favicon -->
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicomatic/favicon-16x16.png" sizes="16x16" />
+</head>
+<body>
+  <div id="app">
+    <main-nav id="main-nav"></main-nav>
+
+    <div class="card">
+      <div class="card-body">
+        <div id="flag">
+          <h1 class="headers">london, england</h1>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div>
+      <ul class="list-group">
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 19: 6 january --- arrive in london, england </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 20: 7 january --- london, england </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-dark">day 21: 8 january --- london, england </li></a>
+        <a href="#day"><li class="itemText list-group-item list-group-item-info">day 22: 9 january --- london to reykjavik, iceland </li></a>
+      </ul>
+    </div>
+
+
+<!-- next up -->
+    <div><a href="/reykjavik" id="nextUp"> next up - reykjavik, iceland</a></div>
+
+<!-- map div -->
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1mS8QMmGB1TPVdc59ODyMnkFwLNEnTs4I" width="640" height="480" id="map"></iframe>
+      </div>
+    </div>
+
+<!-- day details -->
+    <span>
+      <accordion4 id="day" class="accordion listText"
+        day1="19"
+        date1="6 january"
+        location1="arrive in london, england"
+        description1="we made it! brussels was awful but the eurostar train was a very pleasant experience. we went directly to platform 9 3/4 for my best buddy and then went to our airbnb. it's in a great location that should get us to all the highlights easily."
+
+        day2="20"
+        date2="7 january"
+        location2="london, england"
+        description2="today, we got a later start on the day because we slept in and neither of us have any regrets. we walked along the river thames, found the geographical center of london, saw westminster abbey, big ben, the eye, soho, picadilly, and then walked by buckingham palace on our way back to the airbnb. we had some awesome indian food from across the street and we're defrosting and drinking tea now. tomorrow, more exploration of london."
+
+        day3="21"
+        date3="8 january"
+        location3="london, england"
+        description3="we walked east today, along the river, and had some delicious fish and chips just past the eye. we wandered on the millenium bridge and got some great views of the city, mostly things like the shard and the london bridge as well as shakespeare's globe theater. tomorrow, we will spend the day in london and then move on to iceland on our way home."
+
+        day4="22"
+        date4="9 january"
+        location4="london to reykjavik, iceland"
+        description4="we're spending the day in london and flying to reykjavik, iceland tonight. we've been walking around green park, just north buckingham palace, and planning on wandering around hyde park a bit before heading to heathrow. we're hoping to get a glimpse of the northern lights during our stay."
+      ></accordion>
+    </span><br/><hr/>
+
+    <!-- picture carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/london/45.jpg" alt="london">
+          </div>
+
+          <carousel-img url="/london/25.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/26.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/27.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/28.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/29.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/30.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/31.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/32.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/33.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/34.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/35.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/36.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/37.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/38.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/39.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/40.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/41.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/42.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/43.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/44.jpg" altDesc="london"></carousel-img>
+
+          <carousel-img url="/london/1.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/2.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/3.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/4.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/5.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/6.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/7.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/8.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/9.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/10.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/11.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/12.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/13.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/14.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/15.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/16.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/17.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/18.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/19.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/20.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/21.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/22.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/23.jpg" altDesc="london"></carousel-img>
+          <carousel-img url="/london/24.jpg" altDesc="london"></carousel-img>
+
+          <!-- <carousel-img url="/london/.jpg" altDesc="london"></carousel-img>  -->
+
+        </div>  <!-- z carousel-inner -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>  <!-- z picture carousel -->
+
+
+
+
+
+
+
+  </div> <!-- z #app -->
+<!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- main.js -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
