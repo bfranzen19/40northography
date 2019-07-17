@@ -18,8 +18,8 @@ app.use(express.static('./public'))
 /* map search tool variables */
 
 /* allows api keys to be hidden & accesses the api key */
-const dotenv = require('dotenv').config();
-const key = process.env.key1
+// const dotenv = require('dotenv').config();
+// const key = process.env.key1
 
 
 /* routes */
@@ -114,9 +114,9 @@ app.get('/walkingMap', function(req,res) {
 /* map search tool routes */
 
 /* sends the index.html file from the '/' route */
-app.get('/MapSearchTool', function(req, res) {
-    res.sendFile('./public/MapSearchTool/public/html/map_index.html', {root:'./'});
-});
+// app.get('/MapSearchTool', function(req, res) {
+//     res.sendFile('./public/MapSearchTool/public/html/map_index.html', {root:'./'});
+// });
 
 /* makes the api call to google maps */
 app.post('/searchIt', function(req,res) {
