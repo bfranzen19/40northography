@@ -134,8 +134,8 @@ app.post('/searchIt', function(req,res) {
             console.log(`here's the status code: `, response.statusCode);
             res.send(`oops, something went wrong`)
         } else {
-            let bod = JSON.parse(body)
-            let top20 = Array.from(bod.results);
+            var bod = JSON.parse(body)
+            var top20 = Array.from(bod.results);
 
             /* sort by rating and total number of user ratings */
             for(let i=0 ; i<top20.length ; i++) {
