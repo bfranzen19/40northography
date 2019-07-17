@@ -115,7 +115,7 @@ app.get('/walkingMap', function(req,res) {
 
 /* sends the index.html file from the '/' route */
 app.get('/MapSearchTool', function(req, res) {
-    res.sendFile('./public/mapSearchTool/map_index.html', {root:'./'});
+    res.sendFile('./public/html/mapTool_index.html', {root:'./'});
 });
 
 /* makes the api call to google maps */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <!-- vue.js dev -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+        <!-- vue.js prod -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <!--     bootsrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- jquery & ajax -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Base64/1.0.0/base64.min.js' type='text/javascript'></script>
+
+        <!-- main.css -->
+        <link rel="stylesheet" href="/css/mapTool_main.css">
+
+        <!-- gets rid of the favicon 404 error in the console -->
+        <link rel="shortcut icon" href="#">
+
+    </head>
+
+    <body>
+        <!-- vue div -->
+        <div id="app" class="container">
+            <div id="form">
+                <!-- type -->
+                <input id="placeInput" class="formData" type="text" placeholder="enter a location" onfocus=" "/>
+
+                <!-- input box -->
+                <select id="toDo" class="formData select">
+                    <option selected disabled>select one</option>
+                    <option>bar</option>
+                    <option>happy hour</option>
+                    <option>restaurant</option>
+                    <option>point of interest</option>
+                </select>
+
+                <!-- search button -->
+                <button type="button" id="searchBtn" class="formData btn btn-outline-info">search</button>
+            </div>
+            <!-- z form -->
+
+
+            <!-- main container -->
+            <div>
+                <div id="map"></div>
+            </div>
+            <!-- z main container -->
+
+
+            <!-- results -->
+            <div id="results">
+                <search-results
+                    v-for="item in dataArr"
+                    v-bind:index="item.index"
+                    v-bind:key="item.id"
+                    v-bind:name="item.name"
+                    v-bind:rating="item.rating"
+                    v-bind:address="item.address"
+                    v-bind:totalratings="item.totalRatings"
+                    v-bind:open="item.open"
+                    v-bind:price="item.price"
+                ></search-results>
+            </div>
+            <!-- z results -->
+
+        </div>
+
+        <!-- main.js -->
+        <script src="/js/mapTool_main.js"></script>
+    </body>
+</html>
