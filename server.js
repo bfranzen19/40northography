@@ -18,8 +18,8 @@ app.use(express.static('./public'))
 /* map search tool variables */
 
 /* allows api keys to be hidden & accesses the api key */
-// const dotenv = require('dotenv').config();
-// const key = process.env.key1
+const dotenv = require('dotenv').config();
+const key = process.env.key1
 
 
 /* routes */
@@ -114,9 +114,9 @@ app.get('/walkingMap', function(req,res) {
 /* map search tool routes */
 
 /* sends the index.html file from the '/' route */
-// app.get('/MapSearchTool', function(req, res) {
-//     res.sendFile('./public/MapSearchTool/public/html/map_index.html', {root:'./'});
-// });
+app.get('/MapSearchTool', function(req, res) {
+    res.sendFile('./public/mapSearchTool/map_index.html', {root:'./'});
+});
 
 /* makes the api call to google maps */
 app.post('/searchIt', function(req,res) {
@@ -186,30 +186,30 @@ app.use(function(req,res,next) {
 })
 
 /* deployment route code */
-try {
-  var httpsConfig = {
-    key: fs.readFileSync('/etc/letsencrypt/live/40northography.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/40northography.com/cert.pem'),
-  }
-
-  var httpsServer = HTTPS.createServer(httpsConfig, app)
-  httpsServer.listen(443)
-
-  var httpApp = express()
-  httpApp.use(function(req,res,next) {
-    res.redirect('https://40northography.com' + req.url)
-  })
-  httpApp.listen(80)
-}
-catch(e) {
-  console.log(e)
-  console.log('could not start HTTPS server')
-  var httpServer = HTTP.createServer(app)
-  httpServer.listen(80)
-  // httpServer.listen(8080)
-}
+// try {
+//   var httpsConfig = {
+//     key: fs.readFileSync('/etc/letsencrypt/live/40northography.com/privkey.pem'),
+//     cert: fs.readFileSync('/etc/letsencrypt/live/40northography.com/cert.pem'),
+//   }
+//
+//   var httpsServer = HTTPS.createServer(httpsConfig, app)
+//   httpsServer.listen(443)
+//
+//   var httpApp = express()
+//   httpApp.use(function(req,res,next) {
+//     res.redirect('https://40northography.com' + req.url)
+//   })
+//   httpApp.listen(80)
+// }
+// catch(e) {
+//   console.log(e)
+//   console.log('could not start HTTPS server')
+//   var httpServer = HTTP.createServer(app)
+//   httpServer.listen(80)
+//   // httpServer.listen(8080)
+// }
 
 /* development route code */
-// app.listen(8080, function() {
-//   console.log('running on 8080')
-// })
+app.listen(8080, function() {
+  console.log('running on 8080')
+})
