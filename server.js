@@ -120,7 +120,7 @@ app.get('/MapSearchTool', function(req, res) {
 
 /* makes the api call to google maps */
 app.post('/searchIt', function(req,res) {
-    let totalUserRatings, ratings;
+    var totalUserRatings, ratings;
 
     /* builds the query string*/
     let query = req.body.toDo + ' ' + req.body.placeInput
