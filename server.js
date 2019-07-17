@@ -123,7 +123,7 @@ app.post('/searchIt', function(req,res) {
     var totalUserRatings, ratings;
 
     /* builds the query string*/
-    let query = req.body.toDo + ' ' + req.body.placeInput
+    var query = req.body.toDo + ' ' + req.body.placeInput
 
     request({
         url: `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${query}&rankby=prominence&key=${key}`
