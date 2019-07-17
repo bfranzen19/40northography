@@ -138,7 +138,7 @@ app.post('/searchIt', function(req,res) {
             var top20 = Array.from(bod.results);
 
             /* sort by rating and total number of user ratings */
-            for(let i=0 ; i<top20.length ; i++) {
+            for(var i=0 ; i<top20.length ; i++) {
                 if(top20[i] === undefined) {
                     top20[i] = ' ';
                 } else if (top20[i].open_now === undefined || top20[i].open_now === '') {
